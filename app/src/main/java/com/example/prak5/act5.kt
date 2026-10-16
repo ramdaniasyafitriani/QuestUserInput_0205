@@ -71,3 +71,12 @@ fun FormatDataDiri(modifier: Modifier){
                 }
             }
         }
+        OutlinedTextField(
+            value = textAlamat.value,
+            singleLine = true,
+            modifier = Modifier.width(250.dp),
+            label = { Text("Alamat") },
+            onValueChange = {
+                textAlamat.value = it
+            }
+        )
